@@ -1,0 +1,830 @@
+/* Add this at the very top of your CSS file */
+
+
+
+:root {
+    --brand-blue: #00aeef;
+    --text-dark: #1a1a1a;
+    --text-gray: #666;
+}
+
+* {
+    
+      margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #0b0f1a;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
+}
+
+/* ... (Keep your Logo and Nav-links CSS exactly as you sent it) ... */
+
+/* Layout Container FIX */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    align-items: flex-start; /* Required for sticky to work */
+}
+
+/* Sidebar STICKY FIX */
+.sidebar {
+    width: 280px;
+    position: sticky; 
+    top: 100px; /* This makes it stick 100px from the top of the screen */
+    height: auto;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding-right: 20px;
+    border-right: 1px solid #eee;
+}
+
+/* Sidebar Links */
+.sidebar ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 0.85rem;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #4f46e5;
+}
+
+/* Sidebar Active State */
+.sidebar ul li.active a {
+    color: #4f46e5;
+    font-weight: 600;
+    background: #f5f3ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: block;
+    /* Update your sidebar CSS to this */
+.sidebar {
+    width: 280px;
+    position: sticky; 
+    top: 20px; /* Keeps it at the top of the screen while scrolling */
+    height: calc(100vh - 40px); /* Makes it fill the screen height */
+    overflow-y: auto; /* Adds a scrollbar to the menu if it's too long */
+    padding-right: 20px;
+    border-right: 1px solid #eee;
+    /* Container setup */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    align-items: flex-start; /* Keeps sidebar from stretching */
+    background-color: #f8f9fa; /* Light grey background like the image */
+}
+
+/* The Table of Contents "Box" (Floating Card) */
+.sidebar-card {
+    width: 300px;
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 12px; /* Rounded corners like the image */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    position: sticky;
+    top: 40px; /* Sticks to top when scrolling */
+    margin-right: 40px;
+}
+
+.sidebar-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.sidebar-card ul {
+    list-style: none;
+}
+
+.sidebar-card ul li {
+    margin-bottom: 12px;
+}
+
+/* Link Styling - No blue, all same color */
+.sidebar-card ul li a {
+    text-decoration: none;
+    color: #6b7280; /* Grey color from screenshot */
+    font-size: 14px;
+    transition: all 0.2s ease;
+    display: block;
+}
+
+/* Hover effect */
+.sidebar-card ul li a:hover {
+    color: #1677ff;
+    padding-left: 4px;
+}
+
+/* Main Content Styling */
+.content {
+    flex: 1;
+    background: #ffffff; /* White background for text */
+    padding: 40px;
+    border-radius: 12px;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+}
+
+/* This removes the blue background/text you saw in the image */
+.sidebar ul li a {
+    text-decoration: none;
+    color: #666; /* Match the gray color of the other links */
+    font-size: 0.85rem;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Remove the "active" blue styling completely */
+.sidebar ul li.active a {
+    color: #666;
+    font-weight: normal;
+    background: transparent;
+}
+
+/* Change color only when you hover over it */
+.sidebar ul li a:hover {
+    color: #1677ff; 
+    background: #f0f7ff;
+}
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    padding-left: 50px;
+}
+
+/* ... (Keep your Content H1, H2, P, and Button CSS exactly as you sent it) ... */
+
+/* Footer Fixes */
+.footer {
+    background: #ffffff;
+    padding: 60px 0 30px;
+    border-top: 1px solid #eee;
+    margin-top: 50px;
+}
+
+.footer-top {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    gap: 40px;
+}
+
+/* ... (Keep the rest of your Footer and Login CSS) ... */* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #4f46e5;
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    background: #4f46e5;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+
+/* Layout Container */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+    padding-right: 20px;
+    border-right: 1px solid #eee;
+}
+
+.sidebar h3 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 0.85rem;
+}
+
+.sidebar ul li.active a {
+    color: #4f46e5;
+    font-weight: 600;
+    background: #f5f3ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: block;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    margin: 30px 0 15px 0;
+}
+
+.content h3 {
+    font-size: 1.1rem;
+    margin: 20px 0 10px 0;
+}
+
+.content p {
+    margin-bottom: 20px;
+    color: #4b5563;
+}
+
+.content ul, .content ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.content li {
+    margin-bottom: 10px;
+    color: #4b5563;
+}
+
+.date {
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+
+/* Action Box & Buttons */
+.action-box {
+    background: #f9fafb;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 50px;
+    text-align: center;
+    border: 1px solid #f3f4f6;
+}
+
+.btn-primary {
+    background-color: #6366f1;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #374151;
+    padding: 12px 25px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Footer */
+.main-footer {
+    background: #f9fafb;
+    padding: 60px 50px 20px 50px;
+    margin-top: 80px;
+    border-top: 1px solid #eee;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-col h4 {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.footer-col a {
+    display: block;
+    text-decoration: none;
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+    color: #9ca3af;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer {
+    background: #ffffff;
+    padding: 60px 0 30px;
+    border-top: 1px solid #eee;
+}
+
+/* FOOTER LINKS FIX */
+.footer a {
+    text-decoration: none;
+    /* remove underline */
+    color: #6b7280;
+    /* same color as text */
+}
+
+.footer a:hover {
+    color: #1677ff;
+    /* optional hover color */
+}
+.footer-top {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.brand img {
+    display: block;
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.brand-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #6b7280;
+}
+
+.footer-col h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 14px;
+}
+
+.footer-col ul li {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 14px;
+}
+
+.social {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+    padding: 22px 0;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* image of login */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #ffffff;
+}
+
+.login-wrapper {
+    display: flex;
+    height: 100vh;
+    padding: 40px 60px;
+    gap: 40px;
+}
+
+/* LEFT */
+.login-form {
+    width: 45%;
+    padding: 40px 20px;
+}
+
+.login-form h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 32px;
+}
+
+label {
+    font-size: 14px;
+    color: #374151;
+    display: block;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.remember {
+    font-size: 14px;
+    color: #374151;
+}
+
+.forgot {
+    font-size: 14px;
+    color: #1677ff;
+    text-decoration: none;
+}
+
+.primary-btn {
+    width: 100%;
+    padding: 14px;
+    background: #1677ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.divider {
+    text-align: center;
+    font-size: 12px;
+    color: #9ca3af;
+    margin: 28px 0 20px;
+}
+
+.social-login {
+    display: flex;
+    gap: 12px;
+}
+
+.social-btn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.terms {
+    font-size: 12px;
+    color: #6b7280;
+    margin: 24px 0;
+}
+
+.terms a {
+    color: #1677ff;
+    text-decoration: none;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: #6b7280;
+    text-decoration: none;
+}
+
+/* RIGHT */
+.login-image {
+    width: 55%;
+    background: #1677ff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.login-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Image 4 specific: Social icons are BLACK */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons i {
+    font-size: 18px;
+    color: #333;
+}
+
+
+
+.social-icons a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-icons a:hover i {
+    color: #1677ff;
+}
+
+/* Contact info links styling */
+.contact-info a,
+.contact-item a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover,
+.contact-item a:hover {
+    color: #1677ff;
+}
+
+
+
+
+
+
+
+
+
+
+/* Image 4 specific: Contact icons are BLUE */
+.contact-info p i,
+.contact-item i {
+    color: #1677ff;
+    width: 20px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+
+    .footer-grid,
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+}
+/* ===== FIX VISITED / VIOLET LINKS IN TERMS PAGE ===== */
+
+.content a,
+.content a:visited,
+.content a:hover,
+.content a:active,
+.content a:focus {
+  color: #0066FF !important; /* brand blue */
+  text-decoration: none;
+}
+/* ===== TABLE OF CONTENTS WHITE SHADOW BOX ===== */
+
+.sidebar {
+  background: #ffffff;
+  padding: 24px 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 120px;
+}
+
+/* Sidebar heading */
+.sidebar h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+/* Remove default list style */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Each list item */
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+/* Sidebar links */
+.sidebar ul li a {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #374151;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+/* Hover effect */
+.sidebar ul li a:hover {
+  background-color: #F3F4F6;
+  color: #0066FF;
+}
+
+/* Active section highlight (optional – JS not required) */
+.sidebar ul li a:focus {
+  background-color: #E6F0FF;
+  color: #0066FF;
+  font-weight: 600;
+}

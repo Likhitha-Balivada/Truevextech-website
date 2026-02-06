@@ -1,0 +1,51 @@
+* { box-sizing: border-box; font-family: "Segoe UI", Arial, sans-serif; }
+body { background: #f4f6f8; margin: 0; padding: 40px 0; }
+.container { max-width: 800px; background: #fff; margin: auto; padding: 40px; border-radius: 12px; box-shadow: 0 12px 30px rgba(0,0,0,0.08); }
+h2 { text-align: center; margin-bottom: 6px; color: #1f2937; }
+.subtitle { text-align: center; margin-bottom: 35px; color: #6b7280; font-size: 15px; }
+.section h3 { font-size: 16px; font-weight: 600; color: #111827; margin-bottom: 12px; }
+.field1{
+    margin-bottom:10px;
+}
+.row { display: flex; gap: 22px; margin-bottom: 18px; }
+.field { flex: 1; display: flex; flex-direction: column; }
+label { font-size: 14px; font-weight: 500; color: #374151; margin-bottom: 5px; }
+sup { color: #dc2626; font-weight: bold; }
+input, select, textarea { padding: 11px 13px; font-size: 14px; border-radius: 6px; border: 1px solid #d1d5db; transition: border-color 0.2s, box-shadow 0.2s; }
+textarea { resize: vertical; width: 100%; }
+input:focus, select:focus, textarea:focus { outline: none; border-color: #2563eb; box-shadow: 0 0 0 2px rgba(37,99,235,0.15); }
+.upload-box input[type="file"] { padding: 8px; border: 1px solid #d1d5db; border-radius: 6px; width: 100%; font-size: 14px; cursor: pointer; }
+.hint { font-size: 12px; color: #6b7280; margin-top: 6px; }
+.buttons { display: flex; justify-content: flex-end; margin-top: 20px; }
+.btn-primary { background: #2563eb; color: #fff; border: none; padding: 12px 26px; font-size: 14px; border-radius: 6px; cursor: pointer; }
+.btn-primary:hover { background: #1d4ed8; }
+small.error { color: #dc2626; font-size: 12px; margin-top: 3px; display: block; }
+@media (max-width:768px){ .row { flex-direction: column; } }
+/* ===== FINAL HEADER FIX ===== */
+
+.container {
+    padding-top: 0px !important;
+}
+
+.brand-header {
+    margin: 0 0 0px 0 !important;
+    padding: 0 !important;
+    text-align: center;
+}
+
+.brand-header img {
+    max-width: 160px;
+    display: block;
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 02px 0 0px 0 !important;
+    text-align: center;
+}
+
+.subtitle {
+    margin: 0 0 0px 0 !important;
+    text-align: center;
+}
+

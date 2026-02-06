@@ -1,0 +1,551 @@
+/* * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 12px;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+    --brand-blue: #00aeef;
+    --text-dark: #1a1a1a;
+    --text-gray: #666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #0b0f1a;
+}
+
+/* 
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 40px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container{width:90%;max-width:1200px;margin:auto;} */
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+/* Dark box */
+.hero-img {
+    flex: 1;
+    background: #111;
+    border-radius: 16px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Image size control */
+.hero-image {
+    width: 450px;
+    /* 👈 change only this if needed */
+    height: auto;
+
+}
+
+
+/* MAIN OFFICE */
+/* .center{text-align:center;}
+    .office-box{margin:40px auto 80px;background:#f9fafb;border-radius:14px;padding:20px;display:flex;justify-content:space-around;flex-wrap:wrap;gap:20px;} */
+
+
+.contact-bar {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 20px;
+    max-width: 1100px;
+    margin: auto;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03);
+}
+
+
+.contact-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 170px;
+    /* controls distance between email & phone */
+}
+
+
+.contact-row.center {
+    justify-content: center;
+    margin-top: 14px;
+}
+
+.contact-item {
+    padding-right: 16px;
+    /* reduced from 40px */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* slightly tighter */
+    color: #333;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+
+.contact-item svg {
+    flex-shrink: 0;
+}
+
+
+/* send message */
+.center {
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+
+
+
+
+
+/* FORM */
+.form-map {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+form {
+    flex: 1;
+    background: #fff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin: 12px 0 6px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+textarea {
+    height: 110px;
+}
+
+.map {
+    flex: 1;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+:root {
+    --brand-blue: #00aeef;
+    --text-dark: #1a1a1a;
+    --text-gray: #666;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-dark);
+    background-color: white;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+/* 1. Regional Offices (aaaa.JPG) */
+
+/* 
+        
+        .office-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .office-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+            border: 1px solid #f2f2f2;
+        }
+        .office-card h4 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 0;
+            font-size: 17px;
+        }
+        .office-card h4 i { color: var(--brand-blue); }
+        .office-card p {
+            font-size: 13.5px;
+            margin: 10px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            color: var(--text-gray);
+        }
+        .office-card p i { color: var(--brand-blue); margin-top: 3px; }
+
+ */
+
+
+
+
+
+
+/* 2. Dedicated Support (bbbb.JPG) */
+.support-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.support-card {
+    background: #fff;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    border: 1px solid #f2f2f2;
+}
+
+.support-card i {
+    font-size: 28px;
+    color: var(--brand-blue);
+    margin-bottom: 15px;
+}
+
+.btn {
+    background-color: var(--brand-blue);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+
+.support-card p {
+    font-size: 14px;
+}
+
+
+
+
+/* 3. FAQ Section (cccc.JPG) */
+/*.faq-item {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*    padding: 18px 0;*/
+/*    border-bottom: 1px solid #eee;*/
+/*    max-width: 800px;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+/*.faq-question {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 15px;*/
+/*    font-weight: 500;*/
+/*}*/
+
+/*.faq-question i {*/
+/*    color: var(--brand-blue);*/
+/*}*/
+
+/*.fa-chevron-down {*/
+/*    font-size: 12px;*/
+/*    color: #aaa;*/
+/*}*/
+
+
+
+
+
+
+/* 4. Footer Section (dddd.JPG) */
+footer {
+    background: #ffffff;
+    padding: 60px 0 30px;
+    border-top: 1px solid #eee;
+    margin-top: 50px;
+}
+
+.footer-grid {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    gap: 40px;
+}
+
+.footer-col h5 {
+    font-size: 17px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.footer-col p,
+.footer-col li {
+    font-size: 14px;
+    color: var(--text-gray);
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+
+
+
+
+
+
+
+footer .addlogo img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+footer .addlogo a:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+
+.footer-links a {
+    color: #6b7280;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* .footer-col li { 
+            margin-bottom: 10px;
+         } */
+
+
+.footer-col a {
+    /* margin-bottom: 10px; */
+    color: #6b6b6b;
+    text-decoration: none;
+    line-height: 2.2;
+}
+
+.footer-col a:hover {
+    color: #1677ff;
+}
+
+/* Image 4 specific: Social icons are BLACK */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons i {
+    font-size: 18px;
+    color: #333;
+    /* As seen in image 4 left side */
+}
+
+
+
+
+
+
+
+
+
+
+.social-icons a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-icons a:hover i {
+    color: #1677ff;
+}
+
+/* Contact info links styling */
+.contact-info a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #1677ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Image 4 specific: Contact icons are BLUE */
+.contact-info p i {
+    color: var(--brand-blue);
+    /* As seen in image 4 right side */
+    width: 20px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+
+    .office-grid,
+    .support-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Footer links same as header links */

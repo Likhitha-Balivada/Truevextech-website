@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+    background: #ffffff;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    align-items: center;
+}
+
+.left {
+    width: 50%;
+    padding: 40px 60px;
+}
+
+.left h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #374151;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.checkbox {
+    font-size: 14px;
+    color: #374151;
+}
+
+.link {
+    font-size: 14px;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    background: #1d7afc;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.divider {
+    text-align: center;
+    font-size: 12px;
+    color: #9ca3af;
+    margin: 30px 0;
+}
+
+.social {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.btn-social {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.terms {
+    font-size: 12px;
+    color: #6b7280;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.terms a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer a {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.right {
+    width: 50%;
+    padding: 20px;
+}
+
+.right img {
+    width: 100%;
+    border-radius: 8px;
+    border: 6px solid #1d7afc;
+}
