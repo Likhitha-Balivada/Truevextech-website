@@ -1,0 +1,184 @@
+/* Basic page reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f5f5f7;
+  color: #222;
+}
+
+
+
+.header img{
+  width: 20px;
+  length:20px;
+}
+
+
+
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.meta span {
+  display: inline-flex;        /* 🔥 KEY FIX */
+  align-items: center;         /* 🔥 VERTICAL ALIGN */
+  gap: 6px;                    /* space between icon & text */
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1;
+}
+
+.meta svg {
+  display: block;              /* 🔥 remove baseline issues */
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Center the whole page */
+.page {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Header section */
+.header h1 {
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.meta span {
+  font-size: 14px;
+  color: #666;
+  margin-right: 14px;
+}
+
+/* Two-column layout */
+.content {
+  display: flex;              /* Flexbox for columns */
+  gap: 24px;                  /* Space between columns */
+  margin-top: 24px;
+}
+
+/* Left column */
+.left-column {
+  flex: 3;                    /* Wider than right column */
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.left-column h2,
+.left-column h3 {
+  margin-bottom: 10px;
+}
+
+.left-column p {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.left-column ul {
+  margin-left: 18px;
+  margin-bottom: 18px;
+}
+
+.left-column li {
+  margin-bottom: 6px;
+}
+
+/* Right column */
+.right-column {
+  flex: 1.4;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  position: sticky;           /* Sticky for scroll behavior */
+  top: 20px;
+}
+
+.card h2 {
+  margin-bottom: 12px;
+}
+
+.benefits-list {
+  list-style: none;           /* No bullets */
+  margin-bottom: 18px;
+}
+
+.benefits-list li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* Apply button */
+.apply-btn {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background-color: #005dc1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .right-column {
+    order: -1;                /* Benefits first on mobile */
+  }
+}
+
+svg path {
+  fill: #0c78ed;
+}
